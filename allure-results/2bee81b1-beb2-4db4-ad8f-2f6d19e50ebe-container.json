@@ -1,0 +1,1 @@
+{"uuid":"2bee81b1-beb2-4db4-ad8f-2f6d19e50ebe","name":"API_Automation_Framework_Restful-Booker","children":["96d81add-8965-40e0-bcc7-71020dcd8c6c"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1758374441745,"stop":1758374442623}],"afters":[],"start":1758374441698,"stop":1758374447352}

@@ -1,0 +1,1 @@
+{"uuid":"fb9d30c3-c653-456d-8e76-5f1206fe695f","name":"com.avinashsinha.tests.crud.TestCreateBooking","children":["6c05477e-0157-4baf-9c2d-27f699be295e"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1758377429144,"stop":1758377429145}],"afters":[],"start":1758377428208,"stop":1758377436998}

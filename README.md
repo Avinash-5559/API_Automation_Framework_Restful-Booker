@@ -97,11 +97,22 @@ com.avinashsinha.tests.sample
 
 `mvn clean test -DsuiteXmlFile=testng_Integration.xml`
 
+Available TestNG XMLs:
+
+`testng_createBooking.xml`
+`testng_deleteBookingId.xml`
+`testng_fullUpdate.xml`
+`testng_partialUpdate.xml`
+`testng_sample.xml`
+`testng_verifyByDate.xml`
+`testng_verifyByID.xml`
+`testng_verifyByName.xml`
+
 ---
 
 ## 📊 Reporting
 
-### Allure ReportGenerate
+### Allure Report Generate
 
 `allure serve allure-results`
 

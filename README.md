@@ -87,7 +87,7 @@ com.avinashsinha.tests.sample
 
 ▶️ Running Tests
 
-Run specific TestNG suite
+Run specific TestNG suite:
 mvn clean test -DsuiteXmlFile=testng_createBooking.xml
 
 Available TestNG XMLs:
@@ -109,10 +109,10 @@ Available TestNG XMLs:
 Generate Allure Report
 
 1. Execute tests:
-mvn clean test
+   mvn clean test
 
-2. Generate Allure Report
-allure serve allure-results
+3. Generate Allure Report:
+   allure serve allure-results
 
 ![Restfull](https://github.com/user-attachments/assets/4e746c4a-78d6-4c0d-9e67-492ff048c799)
 
@@ -123,6 +123,7 @@ This will launch an interactive report in your browser.
 ✅ Example Payload with GSON
 
 Example of booking payload creation using GSON:
+
 Booking booking = new Booking();
 booking.setFirstname("John");
 booking.setLastname("Doe");

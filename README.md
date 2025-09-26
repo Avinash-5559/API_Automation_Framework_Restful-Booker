@@ -134,6 +134,7 @@ BookingDates bookingDates = new BookingDates();
 bookingDates.setCheckin("2025-10-01");
 bookingDates.setCheckout("2025-10-05");
 booking.setBookingdates(bookingDates);
+booking.setAdditionalneeds("Lunch");
 
 ---
 

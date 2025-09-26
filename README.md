@@ -93,17 +93,17 @@ com.avinashsinha.tests.sample
 
 ## ▶️ Running Tests
 
-Integration Test (Create Token and Create Booking, Update and Delete Booking)
+### Integration Test (Create Token and Create Booking, Update and Delete Booking)
 
-mvn clean test -DsuiteXmlFile=testng_Integration.xml
+`mvn clean test -DsuiteXmlFile=testng_Integration.xml`
 
 ---
 
 ## 📊 Reporting
 
-Allure ReportGenerate
+### Allure ReportGenerate
 
-allure serve allure-results
+`allure serve allure-results`
 
 ![Restfull](https://github.com/user-attachments/assets/4e746c4a-78d6-4c0d-9e67-492ff048c799)
 

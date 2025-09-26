@@ -70,7 +70,6 @@ com.avinashsinha.tests.integration
 com.avinashsinha.tests.sample
 └── TestIntegrationSample
 
-
 ---
 
 ## ⚙️ Tech Stack

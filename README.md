@@ -93,32 +93,17 @@ com.avinashsinha.tests.sample
 
 ## ▶️ Running Tests
 
-Run specific TestNG suite:
-mvn clean test -DsuiteXmlFile=testng_createBooking.xml
+Integration Test (Create Token and Create Booking, Update and Delete Booking)
 
-Available TestNG XMLs:
-
-- testng_Integration.xml
-- testng_createBooking.xml
-- testng_deleteBookingId.xml
-- testng_fullUpdate.xml
-- testng_partialUpdate.xml
-- testng_sample.xml
-- testng_verifyByDate.xml
-- testng_verifyById.xml
-- testng_verifyByName.xml
+mvn clean test -DsuiteXmlFile=testng_Integration.xml
 
 ---
 
 ## 📊 Reporting
 
-Generate Allure Report
+Allure ReportGenerate
 
-1. Execute tests:
-   mvn clean test
-
-3. Generate Allure Report:
-   allure serve allure-results
+allure serve allure-results
 
 ![Restfull](https://github.com/user-attachments/assets/4e746c4a-78d6-4c0d-9e67-492ff048c799)
 

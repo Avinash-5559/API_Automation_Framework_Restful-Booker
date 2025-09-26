@@ -16,12 +16,12 @@ The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON*
 
 ## 🚀 Features
 - API test automation for **CRUD operations** (Create, Read, Update, Delete) on bookings.
-- Payload creation and serialization using **GSON**.
+- Payload creation and serialisation using **GSON**.
 - Modular design with separation of concerns:
   - **Endpoints** for constants
   - **Modules** for payload management
   - **POJOs** for request/response mapping
-  - **Tests** organized by CRUD, Integration, and Sample flows
+  - **Tests** organised by CRUD, Integration, and Sample flows
 - Assertion layer for reusable validations.
 - Integrated with **Allure Reports** for rich test reporting.
 - Test execution controlled via **TestNG XMLs**.

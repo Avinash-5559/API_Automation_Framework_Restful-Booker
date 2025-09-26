@@ -1,5 +1,12 @@
 # API Automation Framework - Restful Booker
 
+![Java](https://img.shields.io/badge/Java-11%2B-blue)
+![Maven](https://img.shields.io/badge/Maven-Build-orange)
+![TestNG](https://img.shields.io/badge/TestNG-Framework-brightgreen)
+![RestAssured](https://img.shields.io/badge/RestAssured-API--Testing-yellowgreen)
+![GSON](https://img.shields.io/badge/GSON-Payload%20Mapper-lightgrey)
+![Allure](https://img.shields.io/badge/Allure-Reports-ff69b4)
+
 This project is an **API Automation Framework** built to test the [Restful-Booker](https://restful-booker.herokuapp.com) APIs.  
 The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON** for payload management, and **Allure** for reporting.  
 

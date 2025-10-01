@@ -42,49 +42,57 @@ The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON*
 ---
 
 ## 🏗️ Project Structure
-
-### Root Level
-- **API Automation Framework Restful Booker**
-  - `.idea/` *# IntelliJ IDE-specific files* (git-ignored)
-  - `allure-results/` *# Allure report results* (generated after tests)
-  - `pom.xml` *# Maven dependencies*
-  - `testng_*.xml` *# TestNG suite files*
-  - `.gitignore`
-  - `src/` *# Source folder*
-    - (See below for detailed structure)
-
-### Source (`src/main/java`)
-- `com.avinashsinha.endpoints`
-  - `APIConstants` *# Base URLs and endpoint constants*
-- `com.avinashsinha.modules`
-  - `PayloadManager` *# GSON-based payload builders*
-- `com.avinashsinha.pojos`
-  - `Auth`
-  - `Booking`
-  - `BookingDates`
-  - `BookingResponse`
-  - `TokenResponse` *# POJO models for request/response mapping*
-
-### Tests (`src/test/java`)
-- `com.avinashsinha.asserts`
-  - `AssertActions` *# Custom assertion actions*
-- `com.avinashsinha.base`
-  - `BaseTest` *# Test setup and teardown*
-- `com.avinashsinha.tests.crud`
-  - `TestBookingCreate`
-  - `TestBookingDateValidation`
-  - `TestBookingDeletion`
-  - `TestBookingFullUpdate`
-  - `TestBookingPartialUpdate`
-  - `TestBookingVerificationById`
-  - `TestBookingVerificationByName`
-  - `TestCheckHealth`
-  - `TestTokenCreate`
-- `com.avinashsinha.tests.integration`
-  - `TestE2EFlow` *# End-to-End booking workflow tests*
-- `com.avinashsinha.tests.sample`
-  - `TestIntegrationSample`
-
+```base
+API_Automation_Framework_RestfulBooker/
+│
+├── .idea/                                             # (optional) IntelliJ configuration (git-ignored)
+├── allure-results/                                    # Allure report results (generated after tests)
+├── pom.xml                                            # Maven dependencies
+├── testng_*.xml                                       # TestNG suite files
+├── .gitignore
+│
+├── src/
+│   ├── main/java/com/avinashsinha/
+│   │   ├── endpoints/                                 # API Endpoints & Constants
+│   │   │   └── APIConstants
+│   │   │
+│   │   ├── modules/                                   # Payload Builders
+│   │   │   └── PayloadManager
+│   │   │
+│   │   └── pojos/                                     # Request/Response POJOs
+│   │       ├── Auth
+│   │       ├── Booking
+│   │       ├── BookingDates
+│   │       ├── BookingResponse
+│   │       └── TokenResponse
+│   │
+│   └── test/java/com/avinashsinha/
+│       ├── asserts/                                   # Custom Assertions
+│       │   └── AssertActions
+│       │
+│       ├── base/                                      # Base Test Setup
+│       │   └── BaseTest
+│       │
+│       └── tests/
+│           ├── crud/                                  # CRUD Test Cases
+│           │   ├── TestBookingCreate
+│           │   ├── TestBookingDateValidation
+│           │   ├── TestBookingDeletion
+│           │   ├── TestBookingFullUpdate
+│           │   ├── TestBookingPartialUpdate
+│           │   ├── TestBookingVerificationById
+│           │   ├── TestBookingVerificationByName
+│           │   ├── TestCheckHealth
+│           │   └── TestTokenCreate
+│           │
+│           ├── integration/                           # Integration Test Cases
+│           │   └── TestE2EFlow
+│           │
+│           └── sample/                                # Sample Tests
+│               └── TestIntegrationSample
+│
+└── README.md
+```
 ---
 
 ## ▶️ Running Tests

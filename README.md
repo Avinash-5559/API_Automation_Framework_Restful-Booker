@@ -1,8 +1,8 @@
 # API Automation Framework - Restful Booker
 
 ![Java](https://img.shields.io/badge/Java-11%2B-blue)
-![IntelliJ](https://img.shields.io/badge/IntelliJ-IDEA-0C4B33?logo=jetbrains)
-![Maven](https://img.shields.io/badge/Maven-Build-orange)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-IDE-000000?logo=intellijidea&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-Build%20Tool-C71A36?logo=apachemaven&logoColor=white)
 ![TestNG](https://img.shields.io/badge/TestNG-Framework-brightgreen)
 ![RestAssured](https://img.shields.io/badge/RestAssured-API--Testing-yellowgreen)
 ![GSON](https://img.shields.io/badge/GSON-Payload%20Mapper-lightgrey)

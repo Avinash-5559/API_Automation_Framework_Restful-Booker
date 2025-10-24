@@ -8,8 +8,12 @@
 ![GSON](https://img.shields.io/badge/GSON-Payload%20Mapper-lightgrey)
 ![Allure](https://img.shields.io/badge/Allure-Reports-ff69b4)
 
+---
+
+## 🗂️ Overview  
 
 This project is an **API Automation Framework** built to test the [Restful-Booker](https://restful-booker.herokuapp.com) APIs.  
+
 The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON** for payload management, **Allure** for reporting, and **IntelliJ IDEA** as the IDE.
 
 ---
@@ -29,15 +33,16 @@ The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON*
 ---
 
 ## ⚙️ Tech Stack
+
 - **Java 11+**
-- **IntelliJ IDEA** (IDE for development)
-- **Maven** (Build tool)
-- **Rest-Assured** (HTTP client for API automation)
-- **TestNG** (Testing framework)
-- **AssertJ** (Advanced assertions)
-- **GSON** (Payload serialization & deserialization)
-- **Allure Reports** (Test reporting)
-- **Full Folder Structure** (Hybrid Framework)
+- **IntelliJ IDEA** – IDE for development
+- **Maven** – Build & dependency management
+- **Rest-Assured** – HTTP client for API automation
+- **TestNG** – Testing framework
+- **AssertJ** – Advanced assertions
+- **GSON** – Payload serialization & deserialization
+- **Allure Reports** – Reporting framework
+- **Full Folder Structure** – Hybrid Framework
 
 ---
 

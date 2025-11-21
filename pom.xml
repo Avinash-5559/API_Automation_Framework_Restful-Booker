@@ -36,14 +36,14 @@
       <dependency>
           <groupId>io.qameta.allure</groupId>
           <artifactId>allure-testng</artifactId>
-          <version>2.29.1</version>
+          <version>2.31.0</version>
       </dependency>
 
-      <!-- https://assertj.github.io/doc/ -->
+      <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
       <dependency>
           <groupId>org.assertj</groupId>
           <artifactId>assertj-core</artifactId>
-          <version>3.27.3</version>
+          <version>3.27.6</version>
           <scope>test</scope>
       </dependency>
 
@@ -58,7 +58,7 @@
       <dependency>
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-databind</artifactId>
-          <version>2.20.0</version>
+          <version>2.20.1</version>
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
@@ -72,21 +72,21 @@
       <dependency>
           <groupId>org.apache.logging.log4j</groupId>
           <artifactId>log4j-core</artifactId>
-          <version>2.25.1</version>
+          <version>2.25.2</version>
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
       <dependency>
           <groupId>org.apache.poi</groupId>
           <artifactId>poi</artifactId>
-          <version>5.4.1</version>
+          <version>5.5.0</version>
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
       <dependency>
           <groupId>org.apache.poi</groupId>
           <artifactId>poi-ooxml</artifactId>
-          <version>5.4.1</version>
+          <version>5.5.0</version>
       </dependency>
 
   </dependencies>

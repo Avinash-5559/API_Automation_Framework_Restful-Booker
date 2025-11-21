@@ -25,7 +25,8 @@ public class TestBookingFullUpdate extends BaseTest {
         requestSpecification.basePath(APIConstants.BASE_PATH + "/" + bookingID);
 
         response = RestAssured.given(requestSpecification).cookie("token", basePathUpdate)
-                .when().body(payloadManager.fullUpdatePayloadBookingAsString())
+                .body(payloadManager.fullUpdatePayloadBookingAsString())
+                .when().log().all()
                 .put();
 
         validatableResponse = response.then().log().all().statusCode(200);

@@ -130,7 +130,6 @@ This will launch an interactive report in your browser.
 ---
 ##  ✅ Example Payload with GSON
 
-Example of booking payload creation using GSON:
 ```java
 Booking booking = new Booking();
 booking.setFirstname("John");

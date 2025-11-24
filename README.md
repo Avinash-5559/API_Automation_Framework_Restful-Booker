@@ -47,7 +47,7 @@ The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON*
 ---
 
 ## 🏗️ Project Structure
-```base
+```bash
 API_Automation_Framework_RestfulBooker/
 │
 ├── .idea/                                             # (optional) IntelliJ configuration (git-ignored)

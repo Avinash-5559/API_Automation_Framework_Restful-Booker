@@ -7,7 +7,7 @@ import com.google.gson.Gson;
 
 public class PayloadManager {
 
-    public String createPayloadBookingAsString() {
+    public String createBookingRequestAsString() {
 
         Booking booking = new Booking();
 
@@ -42,7 +42,7 @@ public class PayloadManager {
         return bookingResponse;
     }
 
-    public String createPayloadTokenAsString() {
+    public String createTokenRequestAsString() {
 
         Auth auth = new Auth();
 
@@ -75,7 +75,7 @@ public class PayloadManager {
         return booking;
     }
 
-    public String fullUpdatePayloadBookingAsString() {
+    public String fullUpdateBookingRequestAsString() {
 
         Booking booking = new Booking();
 
@@ -98,7 +98,7 @@ public class PayloadManager {
         return jsonFullUpdateString;
     }
 
-    public String partialUpdatePayloadBookingAsString() {
+    public String partialUpdateBookingRequestAsString() {
 
         Booking booking = new Booking();
 

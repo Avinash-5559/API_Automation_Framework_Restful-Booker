@@ -47,62 +47,72 @@ The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON*
 ---
 
 ## 🏗️ Project Structure
+
 ```bash
 API_Automation_Framework_RestfulBooker/
 │
-├── .idea/                                             # (optional) IntelliJ configuration (git-ignored)
-├── allure-results/                                    # Allure report results (generated after tests)
-├── pom.xml                                            # Maven dependencies
-├── testng_*.xml                                       # TestNG suite files
+├── .idea/                                                          # IntelliJ config
+├── .mvn/                                                           # Maven wrapper files
+├── allure-results/                                                 # Allure results (auto-generated)
+│
+├── pom.xml                                                         # Maven dependencies & build config
+├── testng_*.xml                                                    # TestNG suite files
 ├── .gitignore
 │
 ├── src/
-│   ├── main/java/com/avinashsinha/
-│   │   ├── endpoints/                                 # API Endpoints & Constants
-│   │   │   └── APIConstants
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com.avinashsinha.endpoints/
+│   │   │   │   └── APIConstants.java                               # API Endpoints & Constants
+│   │   │   │
+│   │   │   ├── com.avinashsinha.modules/
+│   │   │   │   └── PayloadManager.java                             # Payload Builders
+│   │   │   │
+│   │   │   └── com.avinashsinha.pojos/                             # Request/Response POJOs
+│   │   │       ├── Auth.java
+│   │   │       ├── Booking.java
+│   │   │       ├── BookingDates.java
+│   │   │       ├── BookingResponse.java
+│   │   │       └── TokenResponse.java
 │   │   │
-│   │   ├── modules/                                   # Payload Builders
-│   │   │   └── PayloadManager
-│   │   │
-│   │   └── pojos/                                     # Request/Response POJOs
-│   │       ├── Auth
-│   │       ├── Booking
-│   │       ├── BookingDates
-│   │       ├── BookingResponse
-│   │       └── TokenResponse
+│   │   └── resources/
+│   │       └── log4j2.xml                                          # Logging configuration
 │   │
-│   └── test/java/com/avinashsinha/
-│       ├── asserts/                                   # Custom Assertions
-│       │   └── AssertActions
-│       │
-│       ├── base/                                      # Base Test Setup
-│       │   └── BaseTest
-│       │
-│       └── tests/
-│           ├── crud/                                  # CRUD Test Cases
-│           │   ├── TestBookingCreate
-│           │   ├── TestBookingDateValidation
-│           │   ├── TestBookingDeletion
-│           │   ├── TestBookingFullUpdate
-│           │   ├── TestBookingPartialUpdate
-│           │   ├── TestBookingVerificationById
-│           │   ├── TestBookingVerificationByName
-│           │   ├── TestCheckHealth
-│           │   └── TestTokenCreate
+│   └── test/
+│       └── java/
+│           ├── com.avinashsinha.asserts/
+│           │   └── AssertActions.java                              # Custom Assertions
 │           │
-│           ├── integration/                           # Integration Test Cases
-│           │   └── TestE2EFlow
+│           ├── com.avinashsinha.base/
+│           │   └── BaseTest.java                                   # Base Test Setup
 │           │
-│           └── sample/                                # Sample Tests
-│               └── TestIntegrationSample
+│           └── com.avinashsinha.tests/
+│               ├── crud/                                           # CRUD Test Cases
+│               │   ├── TestBookingCreate.java
+│               │   ├── TestBookingDateValidation.java
+│               │   ├── TestBookingDeletion.java
+│               │   ├── TestBookingFullUpdate.java
+│               │   ├── TestBookingPartialUpdate.java
+│               │   ├── TestBookingVerificationById.java
+│               │   ├── TestBookingVerificationByName.java
+│               │   ├── TestCheckHealth.java
+│               │   └── TestTokenCreate.java
+│               │
+│               ├── integration/                                    # Integration Test Cases
+│               │   └── TestE2EFlow.java
+│               │
+│               └── sample/                                         # Sample Tests
+│                   └── TestIntegrationSample.java
 │
 └── README.md
+
 ```
 ---
 
 ## ▶️ Running Tests
 
 ### Integration Test (Create Token and Create Booking, Update and Delete Booking)
+
 ```bash
 mvn clean test -DsuiteXmlFile=testng_Integration.xml
 ```
@@ -120,6 +130,7 @@ mvn clean test -DsuiteXmlFile=testng_Integration.xml
 ---
 ## 📊 Reporting
 ### Generate Allure Report
+
 ```bash
 allure serve allure-results
 ```

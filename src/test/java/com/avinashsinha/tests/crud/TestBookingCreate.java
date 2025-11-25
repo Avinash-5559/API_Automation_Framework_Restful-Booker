@@ -28,7 +28,7 @@ public class TestBookingCreate extends BaseTest {
         requestSpecification.basePath(APIConstants.BASE_PATH);
 
         response = RestAssured.given(requestSpecification)
-                .body(payloadManager.createPayloadBookingAsString())
+                .body(payloadManager.createBookingRequestAsString())
                 .when().log().all()
                 .post();
 

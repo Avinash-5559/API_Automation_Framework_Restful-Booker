@@ -52,7 +52,7 @@ public class TestE2EFlow extends BaseTest {
         requestSpecification.basePath(APIConstants.AUTH_URL);
 
         response = RestAssured.given(requestSpecification)
-                .body(payloadManager.createPayloadTokenAsString())
+                .body(payloadManager.createTokenRequestAsString())
                 .when().log().all()
                 .post();
 
@@ -74,7 +74,7 @@ public class TestE2EFlow extends BaseTest {
         requestSpecification.basePath(APIConstants.BASE_PATH);
 
         response = RestAssured.given(requestSpecification)
-                .body(payloadManager.createPayloadBookingAsString())
+                .body(payloadManager.createBookingRequestAsString())
                 .when().log().all()
                 .post();
 
@@ -153,7 +153,7 @@ public class TestE2EFlow extends BaseTest {
         requestSpecification.basePath(APIConstants.BASE_PATH + "/" + bookingID);
 
         response = RestAssured.given(requestSpecification).cookie("token", basePathUpdate)
-                .body(payloadManager.fullUpdatePayloadBookingAsString())
+                .body(payloadManager.fullUpdateBookingRequestAsString())
                 .when().log().all()
                 .put();
 
@@ -177,7 +177,7 @@ public class TestE2EFlow extends BaseTest {
         requestSpecification.basePath(APIConstants.BASE_PATH + "/" + bookingID);
 
         response = RestAssured.given(requestSpecification).cookie("token", basePathUpdate)
-                .body(payloadManager.partialUpdatePayloadBookingAsString())
+                .body(payloadManager.partialUpdateBookingRequestAsString())
                 .when().log().all()
                 .patch();
 

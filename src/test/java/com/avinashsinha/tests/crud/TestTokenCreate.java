@@ -21,7 +21,7 @@ public class TestTokenCreate extends BaseTest {
         requestSpecification.basePath(APIConstants.AUTH_URL);
 
         response = RestAssured.given(requestSpecification)
-                .body(payloadManager.createPayloadTokenAsString())
+                .body(payloadManager.createTokenRequestAsString())
                 .when().log().all()
                 .post();
 

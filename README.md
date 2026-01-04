@@ -18,20 +18,6 @@ The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON*
 
 ---
 
-## 🚀 Features
-- API test automation for **CRUD operations** (Create, Read, Update, Delete) on bookings.
-- Payload creation and serialisation using **GSON**.
-- Modular design with separation of concerns:
-  - **Endpoints** for constants
-  - **Modules** for payload management
-  - **POJOs** for request/response mapping
-  - **Tests** organised by CRUD, Integration, and Sample flows
-- Assertion layer for reusable validations.
-- Integrated with **Allure Reports** for rich test reporting.
-- Test execution controlled via **TestNG XMLs**.
-
----
-
 ## ⚙️ Tech Stack
 
 - **Java 11+**
@@ -43,6 +29,20 @@ The framework is developed using **Java**, **Rest-Assured**, **TestNG**, **GSON*
 - **GSON** – Payload serialization & deserialization
 - **Allure Reports** – Reporting framework
 - **Full Folder Structure** – Hybrid Framework
+
+---
+
+## 🚀 Features
+- API test automation for **CRUD operations** (Create, Read, Update, Delete) on bookings.
+- Payload creation and serialisation using **GSON**.
+- Modular design with separation of concerns:
+  - **Endpoints** for constants
+  - **Modules** for payload management
+  - **POJOs** for request/response mapping
+  - **Tests** organised by CRUD, Integration, and Sample flows
+- Assertion layer for reusable validations.
+- Integrated with **Allure Reports** for rich test reporting.
+- Test execution controlled via **TestNG XMLs**.
 
 ---
 
@@ -128,6 +128,7 @@ mvn clean test -DsuiteXmlFile=testng_Integration.xml
 - `testng_verifyByName.xml`
 
 ---
+
 ## 📊 Reporting
 ### Generate Allure Report
 
@@ -139,6 +140,7 @@ allure serve allure-results
 This will launch an interactive report in your browser.
 
 ---
+
 ##  ✅ Example Payload with GSON
 
 ```java
@@ -155,6 +157,7 @@ booking.setBookingdates(bookingDates);
 booking.setAdditionalneeds("Lunch");
 ```
 ---
+
 ## 📌 Author
 👤 Avinash Sinha
 

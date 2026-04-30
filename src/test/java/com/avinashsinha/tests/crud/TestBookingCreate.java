@@ -45,6 +45,7 @@ public class TestBookingCreate extends BaseTest {
         assertActions.verifyIntegerKeyNotNull(bookingResponse.getBookingid());
 
         iTestContext.setAttribute("bookingid", bookingResponse.getBookingid());
+
     }
 
 }

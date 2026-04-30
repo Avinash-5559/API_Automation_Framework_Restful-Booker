@@ -86,6 +86,7 @@ public class TestE2EFlow extends BaseTest {
         assertActions.verifyIntegerKeyNotNull(bookingResponse.getBookingid());
 
         iTestContext.setAttribute("bookingid", bookingResponse.getBookingid());
+
     }
 
     @Test(groups = "QA", priority = 4)
@@ -205,6 +206,7 @@ public class TestE2EFlow extends BaseTest {
                 .delete();
 
         validatableResponse = response.then().log().all().statusCode(201);
+
     }
 
 }

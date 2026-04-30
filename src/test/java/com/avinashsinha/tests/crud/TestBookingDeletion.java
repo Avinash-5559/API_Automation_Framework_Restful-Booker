@@ -26,5 +26,6 @@ public class TestBookingDeletion extends BaseTest {
                 .delete();
 
         validatableResponse = response.then().log().all().statusCode(201);
+
     }
 }

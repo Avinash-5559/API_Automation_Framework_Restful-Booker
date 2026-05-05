@@ -12,8 +12,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
+        <maven.compiler.release>25</maven.compiler.release>
+        <suiteXmlFile>testng_integration.xml</suiteXmlFile>
     </properties>
 
     <dependencies>
@@ -93,16 +93,83 @@
 
     </dependencies>
 
-    <!-- Source: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+    <profiles>
+
+        <profile>
+            <id>Integration</id>
+            <properties>
+                <suiteXmlFile>testng_integration.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>CreateBooking</id>
+            <properties>
+                <suiteXmlFile>testng_createBooking.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>DeleteBookingId</id>
+            <properties>
+                <suiteXmlFile>testng_deleteBookingId.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>FullUpdate</id>
+            <properties>
+                <suiteXmlFile>testng_fullUpdate.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>PartialUpdate</id>
+            <properties>
+                <suiteXmlFile>testng_partialUpdate.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Sample</id>
+            <properties>
+                <suiteXmlFile>testng_sample.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>VerifyByDate</id>
+            <properties>
+                <suiteXmlFile>testng_verifyByDate.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>VerifyByID</id>
+            <properties>
+                <suiteXmlFile>testng_verifyByID.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>VerifyByName</id>
+            <properties>
+                <suiteXmlFile>testng_verifyByName.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.15.0</version>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.5</version>
                 <configuration>
-                    <source>25</source>
-                    <target>25</target>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
